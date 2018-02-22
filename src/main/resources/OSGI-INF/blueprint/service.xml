@@ -6,18 +6,18 @@
            http://www.osgi.org/xmlns/blueprint/v1.0.0 https://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd
            http://cxf.apache.org/blueprint/jaxrs http://cxf.apache.org/schemas/blueprint/jaxrs.xsd">
 
-    <cm:property-placeholder persistent-id="restService"
-                             update-strategy="reload">
-        <cm:default-properties>
-            <cm:property name="userServiceRest.URL" value="http://localhost:8181/cxf/user" />
-        </cm:default-properties>
-    </cm:property-placeholder>
+    <!--<cm:property-placeholder persistent-id="restService"-->
+                             <!--update-strategy="reload">-->
+        <!--<cm:default-properties>-->
+            <!--<cm:property name="userServiceRest.URL" value="http://localhost:8181/cxf/user" />-->
+        <!--</cm:default-properties>-->
+    <!--</cm:property-placeholder>-->
 
 
-    <jaxrs:client id="userService" serviceClass="restService.UserService"
-                  address="${userServiceRest.URL}" />
+    <!--<jaxrs:client id="userService" serviceClass="restService.UserService"-->
+                  <!--address="${userServiceRest.URL}" />-->
 
 
-    <service ref="userService" interface="restService.UserService" />
+    <!--<service ref="userService" interface="restService.UserService" />-->
 
 </blueprint>
