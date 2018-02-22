@@ -16,6 +16,8 @@ public class MainActivator implements BundleActivator {
 
     public void start(BundleContext bundleContext) {
         System.out.println("Hello Bundle!");
+
+
         JAXRSServerFactoryBean factory = new JAXRSServerFactoryBean();
         factory.setAddress("http://localhost:8282/user");
         factory.setResourceClasses(UserServiceImpl.class);

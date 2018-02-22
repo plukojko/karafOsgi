@@ -6,7 +6,8 @@ package restService;
 public class UserServiceImpl implements UserService{
 
     public User show() {
-        return new User(1,"Java Master");
+        User user = new User(1,"Java Master");
+        return user;
     }
 
     public String test() {

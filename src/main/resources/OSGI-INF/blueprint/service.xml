@@ -6,6 +6,9 @@
            http://www.osgi.org/xmlns/blueprint/v1.0.0 https://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd
            http://cxf.apache.org/blueprint/jaxrs http://cxf.apache.org/schemas/blueprint/jaxrs.xsd">
 
+
+
+
     <!--<cm:property-placeholder persistent-id="restService"-->
                              <!--update-strategy="reload">-->
         <!--<cm:default-properties>-->
