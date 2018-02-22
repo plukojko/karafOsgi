@@ -1,10 +1,10 @@
 package restService;
 
+
 import lombok.Getter;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
 
 /**
  * Created on 2/20/2018.
@@ -17,7 +17,7 @@ public class User {
     @XmlElement()
     private String name;
 
-    public User() {
+    public User() { //Default constructor needed to avoid JAXBException.
     }
 
     public User(int id, String name) {

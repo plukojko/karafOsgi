@@ -10,7 +10,7 @@ public class UserServiceImpl implements UserService{
         return user;
     }
 
-    public String test() {
-        return "I am Alive!";
+    public Message test() {
+        return new Message();
     }
 }
