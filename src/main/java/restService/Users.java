@@ -1,5 +1,7 @@
 package restService;
 
+import lombok.Getter;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,12 +10,12 @@ import java.util.List;
  */
 public class Users {
     private int counter;
+    @Getter
     private List<User> users;
 
     public Users() {
         this.counter = 0;
         this.users = new ArrayList<User>();
-        users.add(new User(counter, "Janusz"));
     }
 
     public void addUser(String name) {
@@ -32,5 +34,13 @@ public class Users {
 
     public User getUserById(int id) {
         return users.get(id);
+    }
+
+    public void updateUser(int id, String name) {
+        users.set(id, new User(id, name));
+    }
+
+    public void deleteUser(int id) {
+        users.remove(id);
     }
 }
